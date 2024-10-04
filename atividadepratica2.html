@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop Meu bichinho Favorito</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="container-fluid bg-success text-white p-3">
+        <nav class="navbar navbar-expand-lg navbar-light bg-success">
+            <div class="container">
+                <a class="navbar-brand" href="#">Pet Shop Meu bichinho Favorito</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <h1 class="mt-3">Tudo que seu pet precisa em um só lugar!</h1>
+    </header>
+
+  
+    <main>
+     
+        <section class="container my-5">
+            <h2 class="text-center mb-4">Nossos Produtos</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/racao.jpeg" class="card-img-top" alt="Ração para Cachorro">
+                        <div class="card-body">
+                            <h5 class="card-title">Ração para Cachorro e Gato</h5>
+                            <p class="card-text">Ração nutritiva e saborosa para cães e gatos de todas as idades.</p>
+                            <a href="#" class="btn btn-success">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/brinquedo.jpeg" class="card-img-top" alt="Brinquedo para Gato">
+                        <div class="card-body">
+                            <h5 class="card-title">Brinquedo para Gato</h5>
+                            <p class="card-text">Brinquedo interativo que mantém seu gato entretido por horas.</p>
+                            <a href="#" class="btn btn-success">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/camas.jpeg" class="card-img-top" alt="Camas para Animais">
+                        <div class="card-body">
+                            <h5 class="card-title">Camas para Animais</h5>
+                            <p class="card-text">Camas confortáveis para seu pet relaxar e dormir bem.</p>
+                            <a href="#" class="btn btn-success">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       
+        <section class="container my-5">
+            <h2 class="text-center mb-4">Nossos Serviços</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Banho e Tosa</h5>
+                            <p class="card-text">Cuide da higiene do seu pet com nossos serviços de banho e tosa.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Consultas Veterinárias</h5>
+                            <p class="card-text">Consultas e exames para manter a saúde do seu pet em dia.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Treinamento e Adestramento</h5>
+                            <p class="card-text">Aulas de treinamento e adestramento para um comportamento melhor do seu pet.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+      
+        <section class="container my-5">
+            <h2 class="text-center mb-4">Entre em Contato</h2>
+            <form>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="nome" class="form-label">Nome:</label>
+                        <input type="text" class="form-control" id="nome" name="nome" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="mensagem" class="form-label">Mensagem:</label>
+                    <textarea class="form-control" id="mensagem" name="mensagem" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-success">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+  
+   <footer class="container-fluid bg-primary text-white text-center p-3">
+        <p>&copy; <span id="year"></span> Pet shop Meu bichinho Favorito. Desenvolvido por Danielle.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
